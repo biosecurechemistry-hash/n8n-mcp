@@ -45,8 +45,8 @@ export declare const workflowTelemetrySchema: z.ZodObject<{
             webhookId: z.ZodOptional<z.ZodString>;
         }, "strict", z.ZodTypeAny, {
             type: string;
-            id: string;
             name: string;
+            id: string;
             typeVersion: number;
             position: [number, number];
             parameters: Record<string, unknown>;
@@ -63,8 +63,8 @@ export declare const workflowTelemetrySchema: z.ZodObject<{
             webhookId?: string | undefined;
         }, {
             type: string;
-            id: string;
             name: string;
+            id: string;
             typeVersion: number;
             position: [number, number];
             parameters: Record<string, unknown>;
@@ -84,8 +84,8 @@ export declare const workflowTelemetrySchema: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         nodes: {
             type: string;
-            id: string;
             name: string;
+            id: string;
             typeVersion: number;
             position: [number, number];
             parameters: Record<string, unknown>;
@@ -105,8 +105,8 @@ export declare const workflowTelemetrySchema: z.ZodObject<{
     }, {
         nodes: {
             type: string;
-            id: string;
             name: string;
+            id: string;
             typeVersion: number;
             position: [number, number];
             parameters: Record<string, unknown>;
@@ -136,8 +136,8 @@ export declare const workflowTelemetrySchema: z.ZodObject<{
     sanitized_workflow: {
         nodes: {
             type: string;
-            id: string;
             name: string;
+            id: string;
             typeVersion: number;
             position: [number, number];
             parameters: Record<string, unknown>;
@@ -167,8 +167,8 @@ export declare const workflowTelemetrySchema: z.ZodObject<{
     sanitized_workflow: {
         nodes: {
             type: string;
-            id: string;
             name: string;
+            id: string;
             typeVersion: number;
             position: [number, number];
             parameters: Record<string, unknown>;

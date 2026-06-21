@@ -19,8 +19,8 @@ export declare const workflowNodeSchema: z.ZodObject<{
     executeOnce: z.ZodOptional<z.ZodBoolean>;
 }, "strip", z.ZodTypeAny, {
     type: string;
-    id: string;
     name: string;
+    id: string;
     typeVersion: number;
     position: [number, number];
     parameters: Record<string, unknown>;
@@ -36,8 +36,8 @@ export declare const workflowNodeSchema: z.ZodObject<{
     executeOnce?: boolean | undefined;
 }, {
     type: string;
-    id: string;
     name: string;
+    id: string;
     typeVersion: number;
     position: [number, number];
     parameters: Record<string, unknown>;

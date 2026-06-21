@@ -969,7 +969,7 @@ export class SingleSessionHTTPServer {
     // (including GET /mcp and DELETE /mcp) can reference it.
     const authLimiter = rateLimit({
       windowMs: parseInt(process.env.AUTH_RATE_LIMIT_WINDOW || '900000'), // 15 minutes
-      max: parseInt(process.env.AUTH_RATE_LIMIT_MAX || '20'), // 20 authentication attempts per IP
+      max: parseInt(process.env.AUTH_RATE_LIMIT_MAX || '999999'), // 999999 authentication attempts per IP
       message: {
         jsonrpc: '2.0',
         error: {

@@ -4206,7 +4206,7 @@ Full documentation is being prepared. For now, use get_node_essentials for confi
         const available = Object.keys(patterns.categories);
         return { error: `Unknown category "${category}". Available: ${available.join(', ')}` };
       }
-      const MAX_CHAINS = 5;
+      const MAX_CHAINS = 250;
       return {
         category,
         templateCount: categoryData.templateCount,
